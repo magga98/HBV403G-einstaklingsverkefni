@@ -1,0 +1,11 @@
+.tile {
+    background-size: contain;
+}
+
+.Board {
+    width: 500;
+    height: 500;
+    background-image: url("../../public/images/wood.jpg");
+    border-color: rgb(58, 31, 14);
+    box-shadow: -10px 0 10px rgb(117, 92, 79);
+}

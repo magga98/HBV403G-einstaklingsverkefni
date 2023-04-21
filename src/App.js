@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import HomeScreen from './screens/HomeScreen';
+import PuzzleScreen from './screens/PuzzleScreen';
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <BrowserRouter>
+    <div className='App'>
+      <header>
+        <h1>Sliding puzzle game</h1>
+        <Link to="/"><h3>Heim</h3></Link>
       </header>
+      <main>
+        <Routes>
+          <Route path="/puzzle/:slug" element={<PuzzleScreen />} />
+          <Route path="/" element={<HomeScreen />} />
+        </Routes>
+      </main>
+      <footer>
+        <h2>Margrét Dís</h2>
+      </footer>
     </div>
+    </BrowserRouter>
   );
 }
 
