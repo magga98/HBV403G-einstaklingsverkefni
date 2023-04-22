@@ -21,7 +21,15 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(82, 67, 58);
+}
+
+header h1{
+  color: #28211f;
+}
+
+header h3:hover {
+  color: antiquewhite;
 }
 
 .App-link {

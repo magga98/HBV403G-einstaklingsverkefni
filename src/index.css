@@ -6,6 +6,10 @@ body {
     inset -100px 0 120px rgb(201, 158, 125);
 }
 
+h1{
+  color: #5e4d44;
+}
+
 header{
   background-color: rgb(90, 84, 83);
   color: #000000;
@@ -22,7 +26,7 @@ footer{
 }
 
 header a {
-  color: rgb(0, 0, 0);
+  color: rgb(40, 29, 29);
   font-weight: bold;
   text-decoration: none;
 }
