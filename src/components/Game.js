@@ -185,10 +185,10 @@ export default function Game() {
       </div>
       {complete && (
         <p>
-          <button onClick={() => {resetPuzzle();
+          <button className="button-play" onClick={() => {resetPuzzle();
             }}
           >
-            Play Again
+            Spila Aftur
           </button>
         </p>
       )}
